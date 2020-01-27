@@ -44,9 +44,9 @@ module Players
             else return "8"
             end
           end
+        # def end
         end
-      # def end
-      end
+      
 
 
 
