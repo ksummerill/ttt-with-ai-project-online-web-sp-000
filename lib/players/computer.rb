@@ -26,6 +26,8 @@ module Players
 end
 
 # more strategic #move to implement later
+# turn_tracker = @board.turn_count
+# if the computer goes first (token "X") it should choose the middle
 # if self.token == "X"
 #   if turn_tracker == 0
 #     return "5"
