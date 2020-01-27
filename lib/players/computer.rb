@@ -42,8 +42,7 @@ module Players
                 !@board.taken?("9")
                 return "9"
               else return "8"
-              end
-            end
+              
           end
           end
 
