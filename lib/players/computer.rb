@@ -39,10 +39,10 @@ module Players
               # @board.cells.each do |X|
                 return "1"
               end
-            abort "kill the game for now..."
+            # abort "kill the game for now..."
           end
           end
-        
+
     end
 
 
