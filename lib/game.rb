@@ -92,9 +92,8 @@ class Game
     if self.won?
       puts "Congratulations #{self.winner}!"
     else self.draw?
-      self.play_again?
       puts "Cat's Game!"
-
+      self.play_again?
     end
   end
 
