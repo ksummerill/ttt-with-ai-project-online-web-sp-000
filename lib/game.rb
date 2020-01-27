@@ -93,7 +93,7 @@ class Game
       puts "Congratulations #{self.winner}!"
     else self.draw?
       puts "Cat's Game!"
-      puts " Want to play again?"
+      self.play_again?
     end
   end
 
