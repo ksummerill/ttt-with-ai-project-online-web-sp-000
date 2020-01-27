@@ -34,12 +34,15 @@ module Players
             return "5"
           # check the corners, pick an empty one.
             elsif turn_tracker == 2
-              if !@board.taken?("1")
+              !@board.taken?("1")
               # || !@board.taken?("3") || !@board.taken?("7") || !@board.taken?("9")
               # @board.cells.each do |X|
                 return "1"
+              elsif turn_tracker == 4
+                !@board.taken?("9")
+                return "9"
+              else return "8"
               end
-            # abort "kill the game for now..."
           end
           end
 
