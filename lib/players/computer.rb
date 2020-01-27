@@ -29,40 +29,20 @@ module Players
       #
       turn_tracker = @board.turn_count
         # if the computer goes first (token "X") it should choose the middle
-        # if self.token == "X"
-        #   if turn_tracker == 0
-        #     return "5"
-        #   # check the corners, pick an empty one.
-        #     elsif turn_tracker == 2
-        #       !@board.taken?("1")
-        #       # || !@board.taken?("3") || !@board.taken?("7") || !@board.taken?("9")
-        #       # @board.cells.each do |X|
-        #         return "1"
-        #     elsif turn_tracker == 4
-        #         !@board.taken?("9")
-        #         return "9"
-        #     else return "8"
-        #     end
-        #   end
-        if board.cells[4] == " "
-        "5"
-      elsif board.cells[0] == " "
-        "1"
-      elsif board.cells[2] == " "
-        "3"
-      elsif board.cells[6] == " "
-        "7"
-      elsif board.cells[8] == " "
-        "9"
-      elsif board.cells[1] == " "
-        "2"
-      elsif board.cells[3] == " "
-        "4"
-      elsif board.cells[5] == " "
-        "6"
-      elsif board.cells[7] == " "
-        "8"
-      end
+        if self.token == "X"
+          if turn_tracker == 0
+            return "5"
+          # check the corners, pick an empty one.
+            elsif turn_tracker == 2
+              !@board.taken?("1") || !@board.taken?("3") || !@board.taken?("7") || !@board.taken?("9")
+              # @board.cells.each do |X|
+                return @board.taken?("1")
+            elsif turn_tracker == 4
+                !@board.taken?("9")
+                return "9"
+            else return "8"
+            end
+          end
         # def end
         end
 
