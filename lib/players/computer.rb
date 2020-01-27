@@ -15,20 +15,7 @@ module Players
     def move(board)
       turn_tracker = @board.turn_count
         # if the computer goes first (token "X") it should choose the middle
-        if self.token == "X"
-          if turn_tracker == 0
-            return "5"
-          # check the corners, pick an empty one.
-            elsif turn_tracker == 2
-              !@board.taken?("1") || !@board.taken?("3") || !@board.taken?("7") || !@board.taken?("9")
-              # @board.cells.each do |X|
-                return @board.taken?("1")
-            elsif turn_tracker == 4
-                !@board.taken?("9")
-                return "9"
-            else return "8"
-            end
-        end
+
       # def end
       end
 
@@ -37,3 +24,19 @@ module Players
 
   # module end
 end
+
+# more strategic #move to implement later
+# if self.token == "X"
+#   if turn_tracker == 0
+#     return "5"
+#   # check the corners, pick an empty one.
+#     elsif turn_tracker == 2
+#       !@board.taken?("1") || !@board.taken?("3") || !@board.taken?("7") || !@board.taken?("9")
+#       # @board.cells.each do |X|
+#         return @board.taken?("1")
+#     elsif turn_tracker == 4
+#         !@board.taken?("9")
+#         return "9"
+#     else return "8"
+#     end
+# end
