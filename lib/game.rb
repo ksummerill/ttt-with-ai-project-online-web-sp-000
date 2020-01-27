@@ -94,7 +94,7 @@ class Game
     else self.draw?
       self.play_again?
       puts "Cat's Game!"
-      
+
     end
   end
 
