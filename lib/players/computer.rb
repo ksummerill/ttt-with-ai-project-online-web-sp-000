@@ -13,15 +13,31 @@ module Players
     # if there's an O on the board, the computer should choose a place next to it
     # if the computer has 2 neighboring tokens on the board, it should choose the 3rd spot to win
     def move(board)
-      turn_tracker = @board.turn_count
-        # if the computer goes first (token "X") it should choose the middle
+      # hard-coded moves that favor the middle, corners then other spaces
+      if board.cells[4] == " "
+        "5"
+      elsif board.cells[0] == " "
+        "1"
+      elsif board.cells[2] == " "
+        "3"
+      elsif board.cells[6] == " "
+        "7"
+      elsif board.cells[8] == " "
+        "9"
+      elsif board.cells[1] == " "
+        "2"
+      elsif board.cells[3] == " "
+        "4"
+      elsif board.cells[5] == " "
+        "6"
+      elsif board.cells[7] == " "
+        "8"
+      end
 
       # def end
       end
-
     # class end
   end
-
   # module end
 end
 
