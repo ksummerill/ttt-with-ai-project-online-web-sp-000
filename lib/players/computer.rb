@@ -38,15 +38,15 @@ module Players
               # || !@board.taken?("3") || !@board.taken?("7") || !@board.taken?("9")
               # @board.cells.each do |X|
                 return "1"
-              elsif turn_tracker == 4
+            elsif turn_tracker == 4
                 !@board.taken?("9")
                 return "9"
-              else return "8"
-              
+            else return "8"
+            end
           end
-          end
-
-    end
+        end
+      # def end
+      end
 
 
 
