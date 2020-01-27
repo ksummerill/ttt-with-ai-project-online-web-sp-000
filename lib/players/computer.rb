@@ -42,9 +42,9 @@ module Players
                 return "9"
             else return "8"
             end
-          end
-        # def end
         end
+      # def end
+      end
 
 
 
